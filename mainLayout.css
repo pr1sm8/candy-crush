@@ -1,0 +1,65 @@
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+
+/* REMOVE ME - dashed lines and height for debugging */
+#mainColumn {
+	outline: 1px dashed orange;
+	
+	/* width: 50%; */
+	
+}
+
+  /* Your css code here! */
+
+#firstColumn{
+	display: flex;
+	flex-direction: column;
+	outline: 1px solid black;
+}
+#lastColumn{
+	outline: 1px solid darkblue;
+}
+
+#game-name{
+	color:cadetblue;
+	font-family: 'Comfortaa';
+	font-weight: 1000;
+	font-style: bold;
+	font-size: 36px;
+}
+
+/* body{
+	height: 100%;
+} */
+#candy-table{
+	padding: 10px;
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+#candy-table td{
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	
+	border: 1px  solid black;
+	padding: 10px;
+}
+table{
+	padding: 5px;
+	width: 100%;
+}
+td{
+	padding:5px;
+}
+td > input{
+	height: 30px;
+	width: 60px;
+	text-align: center;
+}
+#move-input{
+	border-radius: 20px;
+	border: 1px dashed black;
+	font-size: medium;
+	padding: 10px;
+}
