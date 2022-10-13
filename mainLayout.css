@@ -6,19 +6,22 @@
 #mainColumn {
 	outline: 1px dashed orange;
 	
+	background-color: aqua;
 	/* width: 50%; */
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
   /* Your css code here! */
 
 #firstColumn{
-	display: flex;
-	flex-direction: column;
-	outline: 1px solid black;
+	text-align: center;
+	background-color: beige;
 }
 #lastColumn{
-	outline: 1px solid darkblue;
+	text-align: center;
+	background-color: antiquewhite;
 }
 
 #game-name{
@@ -32,12 +35,16 @@
 /* body{
 	height: 100%;
 } */
+
+
 #candy-table{
-	padding: 10px;
+	padding: auto;
 	border-spacing: 2px;
 	border-collapse: separate;
-	height:320px;
+	height: 320px;
 	width: 320px;
+	
+	
 }
 #candy-table td{
 	text-align: center;
@@ -46,6 +53,7 @@
 	
 	border: 1px  solid black;
 	padding: 5px;
+	
 }
 table{
 	padding: 5px;
@@ -63,5 +71,7 @@ td > input{
 	border-radius: 20px;
 	border: 1px dashed black;
 	font-size: medium;
-	padding: 10px;
+	height:40px;
+	width:40px;
+	padding:10px;
 }
