@@ -3,10 +3,13 @@
  */
 
 /* REMOVE ME - dashed lines and height for debugging */
+body{
+	background-color: #85dfb5;
+}
 #mainColumn {
-	outline: 1px dashed orange;
+	/* outline: 1px dashed orange; */
 	
-	background-color: aqua;
+	background-color: #85dfb5;
 	/* width: 50%; */
 	display: flex;
 	flex-direction: column;
@@ -17,18 +20,18 @@
 
 #firstColumn{
 	text-align: center;
-	background-color: beige;
+	background-color: #85dfb5;
 }
 #lastColumn{
 	text-align: center;
-	background-color: antiquewhite;
+	background-color: #85dfb5;
 }
 
 #game-name{
-	color:cadetblue;
-	font-family: 'Arial';
-	font-weight: 1000;
-	font-size: 36px;
+	color:#ff2e2e;
+	
+	font-weight: 800;
+	font-size: 42px;
 }
 
 /* body{
@@ -36,40 +39,48 @@
 } */
 
 
-#candy-table{
+#candy-board{
 	padding: auto;
-	border-spacing: 2px;
+	border-spacing: 0px;
 	border-collapse: separate;
 	height: 320px;
 	width: 320px;
 	
 	
 }
-#candy-table td{
+#candy-board td{
 	text-align: center;
 	height: 40px;
 	width: 40px;
-	
+	color: black;
 	border: 1px  solid black;
 	padding: 5px;
+	margin:10px;
+}
+#move-table{
+	padding: 5px;
+	width: 50%;
 	
 }
-table{
-	padding: 5px;
-	width: 100%;
-}
-td{
+#move-table td{
 	padding:5px;
 }
 td > input{
-	width: 65px;
 	text-align: center;
 }
 #move-input{
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	border: 1px dashed black;
 	font-size: medium;
-	height:40px;
-	width:40px;
-	padding:10px;
+	height:35px;
+	width:35px;
+	/* padding:6px; */
+	text-align: center;
+	margin:10px;
+}
+.btn:disabled{
+	background-color: grey;
+}
+#crush-once{
+	margin:10px;
 }
